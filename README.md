@@ -53,31 +53,40 @@ When distraction is detected for a continuous period, the system triggers a visu
 
 ---
 
+## 💡 Future Improvements
+
+- Improve accuracy using deep learning models  
+- Add multi-user tracking  
+- Export attention logs for analysis  
+- Build web-based version using Flask / Streamlit  
+
+---
+
+## ⚠️ Notes
+
+- Works best in good lighting conditions  
+- Requires a webcam  
+- Sound alert works only on Windows OS  
+- Sensitivity can be adjusted in code (`THRESH_X`, `THRESH_Y`)  
+
+---
+
+## 📌 Report
+
+Full project report with detailed explanation and screenshots is included in this repository as a PDF file.
+
+---
+
+## 👥 Team
+
+- Shaza Abdulnaser Sayed  
+- Sama Mohamed Tawfik  
+- Sarah Hassan Mostafa  
+- Zizi Mostafa Hamed
+  
 ## ▶️ Installation & Run
 
 ### Install dependencies
 ```bash
 pip install opencv-python mediapipe numpy
-## ▶️ Run the project
-
-```bash
 python main.py
- Future Improvements
-Improve accuracy using deep learning models
-Add multi-user tracking
-Export attention logs for analysis
-Build web-based version using Flask / Streamlit
- Notes
-Works best in good lighting conditions
-Requires a webcam
-Sound alert works only on Windows OS
-Sensitivity can be adjusted in code (THRESH_X, THRESH_Y)
- Report
-
-Full project report with detailed explanation and screenshots is included in this repository as a PDF file.
-
- Team
-Shaza Abdulnaser Sayed
-Sama Mohamed Tawfik
-Sarah Hassan Mostafa
-Zizi Mostafa Hamed
