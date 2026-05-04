@@ -41,7 +41,7 @@ When distraction is detected for a continuous period, the system triggers a visu
 
 ---
 
-## ⚙️ How It Works
+##  How It Works
 
 1. Detect facial landmarks using MediaPipe FaceMesh  
 2. Extract iris positions for both eyes  
@@ -53,7 +53,7 @@ When distraction is detected for a continuous period, the system triggers a visu
 
 ---
 
-## 💡 Future Improvements
+##  Future Improvements
 
 - Improve accuracy using deep learning models  
 - Add multi-user tracking  
@@ -62,7 +62,7 @@ When distraction is detected for a continuous period, the system triggers a visu
 
 ---
 
-## ⚠️ Notes
+##  Notes
 
 - Works best in good lighting conditions  
 - Requires a webcam  
@@ -71,13 +71,13 @@ When distraction is detected for a continuous period, the system triggers a visu
 
 ---
 
-## 📌 Report
+##  Report
 
 Full project report with detailed explanation and screenshots is included in this repository as a PDF file.
 
 ---
 
-## 👥 Team
+##  Team
 
 - Shaza Abdulnaser Sayed  
 - Sama Mohamed Tawfik  
