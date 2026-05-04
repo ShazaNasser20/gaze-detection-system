@@ -1,92 +1,73 @@
 #  Real-Time Gaze Detection System
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3.9+-blue.svg" />
-  <img src="https://img.shields.io/badge/OpenCV-Computer%20Vision-green.svg" />
-  <img src="https://img.shields.io/badge/MediaPipe-Face%20Tracking-orange.svg" />
-</p>
+##  Overview
+This project is a real-time gaze (eye focus) detection system developed using Python.  
+It uses computer vision techniques to track eye movement through a webcam and determines whether the user is focusing or distracted. If the user stays unfocused for a period of time, an alert is triggered.
+
+This project was developed as part of an academic assignment in the Faculty of Artificial Intelligence and Data Management, Course: Pattern Recognition.
 
 ---
 
-##  Overview
-
-This project is a real-time gaze tracking system built using Python, OpenCV, and MediaPipe.  
-It detects eye movement and determines whether the user is focused or distracted in real time.
-
-When distraction is detected for a continuous period, the system triggers a visual warning and sound alert.
+##  Team Members
+- Shaza Abdulnaser Sayed  
+- Sama Mohamed Tawfik  
+- Sarah Hassan Mostafa  
+- Zizi Mostafa Hamed  
 
 ---
 
 ##  Features
-
-- Real-time face and eye landmark detection  
-- Iris tracking using MediaPipe FaceMesh  
-- Gaze direction estimation (Center / Not Center)  
-- Adjustable sensitivity for better accuracy  
-- Visual tracking overlays (points, lines, bounding box)  
-- Screen warning overlay on distraction  
-- Sound alert system  
-
----
-
-##  Tech Stack
-
-| Technology | Purpose |
-|------------|--------|
-| Python | Core language |
-| OpenCV | Computer vision & webcam handling |
-| MediaPipe | Face and eye landmark detection |
-| NumPy | Numerical computations |
-| Winsound | Sound alerts (Windows only) |
+- Real-time face and eye tracking using webcam  
+- Iris detection using MediaPipe FaceMesh  
+- Gaze direction classification (center / not center)  
+- Adjustable sensitivity for detection  
+- Continuous distraction monitoring  
+- Visual feedback on screen  
+- Audio alert when focus is lost  
 
 ---
 
-##  How It Works
-
-1. Detect facial landmarks using MediaPipe FaceMesh  
-2. Extract iris positions for both eyes  
-3. Compute deviation from eye center  
-4. Determine gaze direction in real time  
-5. If gaze stays off-center for several frames:
-   - Red warning overlay appears  
-   - Sound alert is triggered  
+##  Technologies Used
+- Python  
+- OpenCV  
+- MediaPipe  
+- NumPy  
+- Winsound (Windows only)
 
 ---
 
-##  Future Improvements
+##  System Workflow
+1. Capture live video from webcam  
+2. Detect facial landmarks using MediaPipe  
+3. Extract iris position for both eyes  
+4. Calculate eye center and deviation  
+5. Determine gaze direction  
+6. Trigger alert if distraction continues for several frames  
 
-- Improve accuracy using deep learning models  
-- Add multi-user tracking  
-- Export attention logs for analysis  
-- Build web-based version using Flask / Streamlit  
+---
+
+##  Alert System
+If the user is not focusing for a continuous number of frames:
+- Screen overlay turns red  
+- “FOCUS!” warning appears  
+- Beep sound is triggered  
+
+---
+
+##  Applications
+- Online exam proctoring systems  
+- Attention monitoring tools  
+- Human-computer interaction research  
+- Focus tracking in learning environments  
 
 ---
 
 ##  Notes
-
-- Works best in good lighting conditions  
-- Requires a webcam  
-- Sound alert works only on Windows OS  
-- Sensitivity can be adjusted in code (`THRESH_X`, `THRESH_Y`)  
+- The project runs in real-time using a webcam  
+- Works best under good lighting conditions  
+- Designed for educational purposes  
 
 ---
 
-##  Report
-
-Full project report with detailed explanation and screenshots is included in this repository as a PDF file.
-
----
-
-##  Team
-
-- Shaza Abdulnaser Sayed  
-- Sama Mohamed Tawfik  
-- Sarah Hassan Mostafa  
-- Zizi Mostafa Hamed
-  
-## ▶️ Installation & Run
-
-### Install dependencies
-```bash
-pip install opencv-python mediapipe numpy
-python main.py
+##  License
+This project is for educational use only.
